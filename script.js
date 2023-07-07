@@ -61,7 +61,13 @@ const typed = new Typed(".multiple-text", {
   loop: true,
 });
 
-// pesan masuk ketika di klik
-function pesanMasuk() {
-  alert("pesan berhasil di kirimkan");
-}
+// Notification message for pesan masuk
+
+document.querySelector("form").addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  // Show success notification
+  document.getElementById("success-alert").style.display = "block";
+  document.getElementById("success-alert").innerText =
+    "Pesan Berhasil Terkirim";
+});

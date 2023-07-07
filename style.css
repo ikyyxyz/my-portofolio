@@ -391,6 +391,16 @@ h3 span {
   cursor: pointer;
 }
 
+.success-alert {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 10px;
+  border: 1px solid #d0e9c6;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: none;
+}
+
 /* footer */
 footer {
   display: flex;
